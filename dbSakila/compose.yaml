@@ -1,0 +1,18 @@
+version: '3.1'
+
+services:
+  db:
+    image: sakiladb/mysql:latest
+    ports:
+      - 3306:3306
+    restart: always
+
+  phpmyadmin:
+    image: phpmyadmin
+    restart: always
+    ports:
+      - 8080:80
+    environment:
+      - MYSQL_ROOT_PASSWORD=p_ssW0rd
+      - MYSQL_USER=sakila
+      - MYSQL_PASSWORD=p_ssW0rd
