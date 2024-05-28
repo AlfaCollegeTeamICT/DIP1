@@ -5,8 +5,8 @@
 ## Installatie
 
 ```
-git clone https://github.com/AlfaCollegeTeamICT/Sakila
-cd Sakila
+git clone https://github.com/AlfaCollegeTeamICT/DIP1.git
+cd DIP1/dbSakila
 docker compose up -d
 ```
 
